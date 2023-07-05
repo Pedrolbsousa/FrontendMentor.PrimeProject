@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+body {
+  height: 98vh;
+  width: 98vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+}
+.contText {
+  height: 510px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 21px;
+}
+.Img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/image-qr-code.png");
+}
+.titleQRCode {
+  display: flex;
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  width: 260px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.primeTextQRCode {
+  text-align: center;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+  width: 260px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 375px) {
+  body {
+    height: 98vh;
+    width: 98vw;
+  }
+  .contText {
+    width: 340px;
+  }
+}
+@media (max-width: 824px) {
+  body {
+    height: 98vh;
+    width: 98vw;
+    font-size: 10px;
+  }
+  .contText {
+    width: 240px;
+    height: 350px;
+    border-radius: 14px;
+  }
+  .Img {
+    height: 205px;
+    width: 205px;
+    border-radius: 10px;
+  }
+  .titleQRCode,
+  .primeTextQRCode {
+    width: 170px;
+  }
+}
